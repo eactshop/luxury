@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BIOTIN LUXURY SHOP</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link class="iconweb" rel="icon" type="image/png" href="img/logo luxury.jpg">
+  <meta property="og:title" content="MUA NGAY ĐỂ NHẬN SIÊU ƯU ĐÃI">
+  <meta property="og:description" content="Mua 1 cặp 1000ml tặng kèm 1 cặp 60ml siêu hời + FREE SHIP">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <meta property="og:image" content="./img/avt.jpg">
+</head>
+
+<body>
+  <div class="header">
+    <img src="./img/TikTok_logo.svg.png" alt="" class="header-logo">
+    <div class="header-input">
+      <img class="header-input__kinh" src="./img/kinh.svg" alt="">
+      <input class="header-search" type="search" placeholder="Tìm kiếm">
+    </div>
+    <img src="./img/tải xuống.svg" alt="" class="header-card">
+  </div>
+  <div class="content">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item content-full__w active">
+          <img src="./img/luxury.jpg" class="d-block content-img" alt="...">
+        </div>
+        <div class="carousel-item content-full__w">
+          <img src="./img/luxury1.jpg" class="d-block content-img" alt="...">
+        </div>
+        <div class="carousel-item content-full__w">
+          <img src="./img/luxury2.jpg" class="d-block content-img" alt="...">
+        </div>
+        <div class="carousel-item content-full__w">
+          <img src="./img/luxury3.jpg" class="d-block content-img" alt="...">
+        </div>
+        <div class="carousel-item content-full__w">
+          <img src="./img/luxury4.jpg" class="d-block content-img" alt="...">
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="content-product">
+        <div class="content-product__count">179.000đ - 599.000đ</div>
+        <div class="content-product__sale">
+          <div class="content-product__sale-count">799.000đ</div>
+          <div class="content-product__sale-text">Tiết kiệm tới 200K</div>
+        </div>
+        <div class="content-product__sale-flash">Flash Sale</div>
+        <div class="content-product__name">[MUA 2 ĐƯỢC 4] Dầu gội xả Biotin Collagen Luxury, Dầu gội xả phục hồi ngăn
+          ngừa rụng tóc</div>
+        <div class="content-product__fb">
+          <div class="content-fb__number">5.0</div>
+          <img src="./img/star.svg" alt="" class="content-fb__star">
+          <div class="content-fb__star-num">(785)</div>
+          <div class="content-fb__sold">10.7K đã được bán</div>
+        </div>
+      </div>
+      <div class="content-top">
+        <img src="./img/top.svg" alt="" class="content-top__icon">
+        <div class="content-top__title">Sản phẩm hàng đầu</div>
+        <div class="content-top__des">Dầu gội đầu</div>
+        <img src="./img/mui ten.svg" alt="" class="content-top__icon1">
+      </div>
+
+      <div class="transport">
+        <div class="transport-title">Vận chuyển <br>
+          <div class="transport-description"><img src="./img/free ship.svg" alt="" class="transport-icon"> Miễn phí vận
+            chuyển</div>
+        </div>
+      </div>
+
+      <div class="policy">
+        <div class="policy-title">Chính sách đổi trả</div>
+        <div class="policy-des">Trả hàng trong vòng 30 ngày - Hoàn hàng miễn phí</div>
+      </div>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn-buy btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Mua Ngay
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <img src="./img/luxury.jpg" alt="" class="modal-header__img">
+              <div class="modal-header__count">
+                <div class="">
+                  <div id="discountPrice" class="modal-header__count-title">179.000đ - 599.000đ</div>
+                  <div class="modal-header__count-sale">
+                    <div class="modal-header__count-deco" id="originalPrice">799.000đ</div>
+                    <div class="modal-header__sale25" id="discountPercent">-200K</div>
+                  </div>
+                </div>
+                <div class="modal-header__kg">Dầu gội xả Biotin Collagen Luxury<div id="kg" name"kg"></div>
+                </div>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="myForm">
+                <input class="modal-input" type="text" id="name" name="name" placeholder="Tên" required>
+                <input class="modal-input" type="text" id="phone" name="phone" placeholder="SDT" required>
+                <input class="modal-input" id="address" name="address" placeholder="Địa Chỉ" required>
+                <div>Sản phẩm</div>
+                <div class="modal-radio">
+                  <label>
+                    <input type="radio" name="product" value="Cặp gội, xả 500ml" data-price="599000"
+                      data-discount="359000" data-kg="Cặp gội, xả 500ml" required>
+                    Cặp gội, xả vàng 500ml
+                  </label>
+                  <label>
+                    <input type="radio" name="product" value="Cặp gội, xả 500ml" data-price="599000"
+                      data-discount="359000" data-kg="Cặp gội, xả 500ml" required>
+                    Cặp gội, xả hồng 500ml
+                  </label>
+                  <label>
+                    <input type="radio" name="product" value="Cặp gội, xả 1000ml" data-price="799000"
+                      data-discount="599000" data-kg="Cặp gội, xả 1000ml" required>
+                    Cặp gội, xả vàng 1000ml
+                  </label>
+                  <label>
+                    <input type="radio" name="product" value="Cặp gội, xả 1000ml" data-price="799000"
+                      data-discount="599000" data-kg="Cặp gội, xả 1000ml" required>
+                    Cặp gội, xả hồng 1000ml
+                  </label>
+
+                  <label>
+                    <input type="radio" name="product" value="Lẻ gội 500ml" data-price="299000" data-discount="179000"
+                      data-kg="Lẻ gội 500ml" required>
+                    Lẻ gội vàng 500ml
+                  </label>
+                  <label>
+                    <input type="radio" name="product" value="Lẻ xả 500ml" data-price="299000" data-discount="179000"
+                      data-kg="Lẻ xả 500ml">
+                    Lẻ xả vàng 500ml
+                  </label>
+                  <label>
+                    <input type="radio" name="product" value="Lẻ gội 500ml" data-price="299000" data-discount="179000"
+                      data-kg="Lẻ gội 500ml" required>
+                    Lẻ gội hồng 500ml
+                  </label>
+                  <label>
+                    <input type="radio" name="product" value="Lẻ xả 500ml" data-price="299000" data-discount="179000"
+                      data-kg="Lẻ xả 500ml">
+                    Lẻ xả hồng 500ml
+                  </label>
+                  <label>
+                    <input type="radio" name="product" value="Lẻ gội 1000ml" data-price="399000" data-discount="299000"
+                      data-kg="Lẻ gội 1000ml">
+                    Lẻ gội hồng 1000ml
+                  </label>
+                  <label>
+                    <input type="radio" name="product" value="Lẻ xả 1000ml" data-price="399000" data-discount="299000"
+                      data-kg="Lẻ xả 1000ml">
+                    Lẻ xả hồng 1000ml
+                  </label>
+                  <label>
+                    <input type="radio" name="product" value="Lẻ gội 1000ml" data-price="399000" data-discount="299000"
+                      data-kg="Lẻ gội 1000ml">
+                    Lẻ gội vàng 1000ml
+                  </label>
+                  <label>
+                    <input type="radio" name="product" value="Lẻ xả 1000ml" data-price="399000" data-discount="299000"
+                      data-kg="Lẻ xả 1000ml">
+                    Lẻ xả vàng 1000ml
+                  </label>
+
+                </div>
+
+
+                <!-- ✅ Hidden input để gửi về Google Sheets -->
+                <input type="hidden" id="hiddenKg" name="kg">
+                <input type="hidden" id="hiddenDiscountPrice" name="discountPrice">
+                <button class="btn-buy__modal" type="submit">Mua Ngay</button>
+                <div class="alert-suc" style="display:none;">Đặt hàng thành công!</div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+      <div class="feedback">
+        <h2 class="feedback-title">Đánh giá của khách hàng (785)</h2>
+        <div class="feedback-description">
+          <div class="feedback-description__1">
+            <div class="feedback-description__user">
+              <img src="./img/anh gai 1.jpg" alt="" class="feedback-description__img">
+            </div>
+            <div class="fb-des__1-title">L**h V**g <br><b class="fb-des__1-oder">Mặt hàng: Dầu gội xả Biotin Collagen
+                Luxury</b></div>
+            <div class="fb-des__1-stars">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            </div>
+          </div>
+          <div class="padding-l50">
+            <div class="fb-des__content">Giao siêu nhanh ms đặt hqua hnay có luôn mua của shop mấy lần r rất hài lòng
+            </div>
+            <img src="./img/fb luxury 1.webp" alt="" class="fb-des__img">
+            <div class="fb-des__date" id="currentDate"></div>
+          </div>
+
+        </div>
+
+        <div class="feedback-description">
+          <div class="feedback-description__1">
+            <div class="feedback-description__user">
+              <img src="./img/trai 4.jpg" alt="" class="feedback-description__img">
+            </div>
+            <div class="fb-des__1-title">T**n A** <br><b class="fb-des__1-oder">Mặt hàng: Dầu gội xả Biotin Collagen
+                Luxury</b></div>
+            <div class="fb-des__1-stars">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            </div>
+          </div>
+          <div class="padding-l50">
+            <div class="fb-des__content">đã mua hàng nhiều lần của shop. mùi thơm, nhiều người hỏi</div>
+            <img src="./img/fb luxury 2.webp" alt="" class="fb-des__img">
+            <div class="fb-des__date currentDate" id="currentDate_1"></div>
+          </div>
+
+        </div>
+
+        <div class="feedback-description">
+          <div class="feedback-description__1">
+            <div class="feedback-description__user">
+              <img src="./img/trai 5.jpg" alt="" class="feedback-description__img">
+            </div>
+            <div class="fb-des__1-title">Q**c Đ*m <br><b class="fb-des__1-oder">Mặt hàng: Dầu gội xả Biotin Collagen
+                Luxury</b></div>
+            <div class="fb-des__1-stars">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            </div>
+          </div>
+          <div class="padding-l50">
+            <div class="fb-des__content">Shop giao nhanh, đóng gói cẩn thận, tặng kèm túi đựng rất xinh. Dầu gội xả
+              thơm, đúng dung tích, giá ok nha
+            </div>
+            <img src="./img/fb luxury 3.webp" alt="" class="fb-des__img">
+            <div class="fb-des__date" id="currentDate_2"></div>
+          </div>
+
+        </div>
+
+        <div class="feedback-description">
+          <div class="feedback-description__1">
+            <div class="feedback-description__user">
+              <img src="./img/meo 3.jpg" alt="" class="feedback-description__img">
+            </div>
+            <div class="fb-des__1-title">Ph**g T**n<br><b class="fb-des__1-oder">Mặt hàng: Dầu gội xả Biotin Collagen
+                Luxury</b></div>
+            <div class="fb-des__1-stars">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            </div>
+          </div>
+          <div class="padding-l50">
+            <div class="fb-des__content">Êh thơm nha, gội sạch nữa. Mình đang thử sản phẩm để xem có đỡ dụng không. Vì
+              cũng đc review loại này
+            </div>
+            <img src="./img/fb luxury 4.webp" alt="" class="fb-des__img">
+            <div class="fb-des__date" id="currentDate_3"></div>
+          </div>
+
+        </div>
+
+        <div class="feedback-description">
+          <div class="feedback-description__1">
+            <div class="feedback-description__user">
+              <img src="./img/anh gai 2.jpg" alt="" class="feedback-description__img">
+            </div>
+            <div class="fb-des__1-title">V* H**ng<br><b class="fb-des__1-oder">Mặt hàng: Dầu gội xả Biotin Collagen
+                Luxury</b></div>
+            <div class="fb-des__1-stars">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+              <img src="./img/star.svg" alt="" class="fb-des__1-star">
+            </div>
+          </div>
+          <div class="padding-l50">
+            <div class="fb-des__content">Hàng chuẩn, mình đã bóc ra và ngửi thử nên tem bị rách ạ. Lần sau mình sẽ ủng
+              hộ tiếp ☺️
+            </div>
+            <img src="./img/fb luxury 5.webp" alt="" class="fb-des__img">
+            <div class="fb-des__date" id="currentDate_4"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="line1"></div>
+      <div class="store-info">
+        <img src="./img/logo luxury.jpg" alt="" class="store-info__img">
+        <div class="store-info__text">
+          <div class="store-info__name">BIOTIN LUXURY SHOP</div>
+          <div class="store-info__product">156 mặt hàng</div>
+        </div>
+        <a href="https://shopee.vn/mailibeautyvn?entryPoint=ShopBySearch&searchKeyword=mailibeautyvn"
+          class="store-link">Cửa Hàng</a>
+      </div>
+      <div class="line1"></div>
+      <div class="des-product">
+        <div class="des-product__title">Công dụng của Luxury Biotin:</div>
+        <div class="des-product__des">
+          Phục hồi tóc hư tổn cấp tốc <br>• Chỉ với 3 bước đơn giản chưa đến 3 phút <br>
+          • Kích thích mọc tóc, tái tạo nang tóc, giảm rụng hiệu quả<br>
+          • Không chứa Silicone & ít Sunfat, an toàn cho da đầu nhạy cảm <br>
+          • Dầu xả giàu dưỡng chất, giúp tóc mềm mượt, dễ chải, không cần ủ lâu <br>
+          • Chăm sóc tóc theo công nghệ y học tái tạo hiện đại, hiệu quả thấy rõ sau vài lần sử dụng
+          <br> <br>
+          <video class="video" width="600" autoplay controls>
+            <source src="./img/FB.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ video.
+          </video>
+          Thông số chính: <br>
+          • Dầu Gội Xả Biotin Collagen Luxury Chính Hãng <br>
+          • Phục Hồi Tóc Hư Tổn, Giúp Mọc Tóc, Ngừa Rụng, Thơm Lâu Chuẩn Nước Hoa Pháp <br>
+          • Chiết xuất thảo mộc quý + Biotin + Collagen thủy phân <br>
+          • Công nghệ tái tạo nang tóc <br>
+          • Hương thơm đẳng cấp lưu hương đến 72h <br>
+          • Không Silicone <br>
+          • Không gây khô da đầu <br>
+          • Phù hợp cho tóc yếu, hư tổn nặng <br>
+
+          THÀNH PHẦN CAO CẤP <br>
+          • Biotin hữu cơ: Kích thích mọc tóc, củng cố chân tóc chắc khỏe <br>
+          • Collagen thủy phân: Phục hồi cấu trúc tóc, tăng độ đàn hồi và bóng mượt <br>
+          • Protein lúa mì: Cân bằng độ ẩm, hỗ trợ tóc mềm mại, chống rối <br>
+          • Vitamin & tinh chất thảo mộc: Nuôi dưỡng da đầu, giảm gãy rụng <br>
+          • Tinh chất nước hoa Pháp: Hương thơm sang trọng, lưu hương đến 72 giờ <br>
+        </div>
+      </div>
+
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
