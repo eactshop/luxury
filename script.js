@@ -53,17 +53,10 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
 
   // Lấy dữ liệu từ form
   let formData = new FormData(this);
-  let selectedProduct = document.querySelector('input[name="product"]:checked');
-
-  formData.append("originalPrice", selectedProduct.getAttribute("data-price"));
-  formData.append(
-    "discountPrice",
-    selectedProduct.getAttribute("data-discount")
-  );
 
   // Gửi dữ liệu lên Google Sheets nhưng không chờ phản hồi
   fetch(
-    "https://script.google.com/macros/s/AKfycbyGfJw6180pGgx0nEaN1BVXkddfpsdGpyaiVlxv3wQ93MQvFwEYYjg2wdwqFfqXVsrY/exec",
+    "https://script.google.com/macros/s/AKfycbw9YqEcKhj07q5mzkVkNm7kpmcK7FqEiotZap7KaUqMyxMoqdbvGx3NSP5XZXL411femQ/exec",
     {
       // Thay bằng URL Web App từ Apps Script
       method: "POST",
